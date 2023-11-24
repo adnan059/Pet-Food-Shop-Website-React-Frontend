@@ -1,0 +1,36 @@
+.serviceImage {
+  margin-inline: auto;
+  margin-bottom: 2.1rem;
+}
+
+.serviceContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 245px);
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-top: 6rem;
+}
+
+.serviceContainer .serviceBox {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.serviceContainer .serviceBox h2 {
+  font-size: var(--fs-3);
+  text-align: center;
+  color: var(--black-2);
+  font-weight: 700;
+}
+
+.serviceContainer .serviceBox p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--gray-3);
+}

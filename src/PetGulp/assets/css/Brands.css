@@ -1,0 +1,14 @@
+.brandsCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.brandsCont img {
+  max-width: 230px;
+  display: block;
+  border: 1px solid var(--gray-5);
+  min-width: 200px;
+}

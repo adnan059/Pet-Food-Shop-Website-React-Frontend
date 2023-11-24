@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+:root {
+  /**
+   * colors
+   */
+
+  --gold: #f9942a;
+  --yellow: #ffc105;
+  --orange: #ed6335;
+  --lightRed: #fc7b64;
+  --gray-1: #6d767e;
+  --gray-2: #878787;
+  --gray-3: #999999;
+  --gray-4: #b3b3b3;
+  --gray-5: #cccccc;
+  --gray-6: #e8e8e8;
+  --white: #ffffff;
+  --black-1: #000000;
+  --black-2: #202122;
+  --black-3: #292a2e;
+  --black-4: #3c3d3e;
+
+  /**
+   * typography
+   */
+
+  --bangers: "Bangers", cursive;
+  --carter: "Carter One", cursive;
+  --nunito: "Nunito Sans", sans-serif;
+
+  --fs-1: 6.5rem;
+  --fs-2: 3.2rem;
+  --fs-3: 2.4rem;
+  --fs-4: 2rem;
+  --fs-5: 1.8rem;
+  --fs-6: 1.5rem;
+  --fs-7: 1.4rem;
+  --fs-8: 1rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 40px;
+
+  /**
+   * shadow
+   */
+
+  --shadow-1: 0 8px 16px #00000026;
+  --shadow-2: 0 8px 8px #00000033;
+
+  /**
+   * radius
+   */
+
+  --radius-4: 4px;
+  --radius-10: 10px;
+
+  /**
+   * transition
+   */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a,
+span,
+img,
+button,
+i {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--nunito);
+  scroll-behavior: smooth;
+}
+
+body.chakra-ui-light {
+  font-size: 1.6rem;
+  color: var(--black-2);
+  font-family: var(--nunito);
+}
+
+section {
+  padding: 6rem 2.3rem;
+}
+
+.sectionHeader {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  gap: 1.2rem;
+  color: var(--black-2);
+  margin-bottom: 3rem;
+}
+
+.sectionHeader span {
+  color: var(--orange);
+  display: inline-block;
+}
+
+.primBtn {
+  color: var(--white);
+  background-color: var(--black-2);
+  padding: 0.8rem 1.8rem;
+  font-size: var(--fs-5);
+  font-weight: 600;
+  border-radius: 18px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primBtn:hover {
+  background-color: var(--lightRed);
+}
+
+/* *************************************** */
+
+/* Media queries */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 52.5%;
+  }
+}

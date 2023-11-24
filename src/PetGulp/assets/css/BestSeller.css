@@ -1,0 +1,67 @@
+.bSellerCont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 400px));
+  gap: 3.5rem 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.bSellerCont .bSellerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2.2rem;
+  position: relative;
+}
+
+.bSellerCont .bSellerBox .addtocart {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  display: none;
+  color: var(--black-3);
+}
+
+.bSellerCont .bSellerBox:hover .addtocart {
+  display: block;
+}
+
+.bSellerCont .bSellerBox .addtocart:hover {
+  color: var(--orange);
+}
+
+.bSellerCont .bSellerBox img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid var(--gray-6);
+}
+
+.bSellerCont .bSellerBox .productContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.bSellerCont .bSellerBox .productContent .rating i {
+  font-size: var(--fs-7);
+  color: var(--gray-4);
+}
+
+.bSellerCont .bSellerBox .productContent h2 {
+  font-size: var(--fs-5);
+  color: var(--black-2);
+  font-weight: 700;
+}
+
+.bSellerCont .bSellerBox .productContent p {
+  font-size: var(--fs-4);
+  font-weight: 700;
+  color: var(--orange);
+}
